@@ -11,10 +11,10 @@ class ResultPage extends StatelessWidget {
     String resultText;
     if (resultScore <= 8) {
       resultText = 'You are awesome and innocent!';
-    } else if (resultScore <= 12) {
+    } else if (resultScore <= 10) {
       resultText = 'Pretty Awesome!';
-    } else if (resultScore <= 16) {
-      resultText = 'You are ... strange?!';
+    } else if (resultScore <= 1) {
+      resultText = 'Very Good (Bro)!';
     } else {
       resultText = 'You are so bad!';
     }
@@ -40,10 +40,12 @@ class ResultPage extends StatelessWidget {
             child: ElevatedButton(
                 onPressed: resetHandler,
                 style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all(Colors.deepPurpleAccent),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(28.0),
-                            side: BorderSide(color: Colors.blue)))),
+                            side: BorderSide(color: Colors.deepPurpleAccent)))),
                 child: const Text(
                   "Restart Quiz",
                   style: TextStyle(fontFamily: "Poppinss"),

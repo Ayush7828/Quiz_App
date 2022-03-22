@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/main.dart';
+import 'package:quiz_app/quiz_page.dart';
 import 'package:quiz_app/result_page.dart';
 
 class SplashScreen extends StatefulWidget {

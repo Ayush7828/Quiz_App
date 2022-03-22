@@ -50,6 +50,15 @@ class _MyAppState extends State<MyApp> {
         {'text': 'App Development', 'score': 8},
       ]
     },
+    {
+      'questionText': 'What s your favorite Game ?',
+      'answer': [
+        {'text': 'Pubg', 'score': 44},
+        {'text': 'Subway Surf', 'score': 8},
+        {'text': 'Free-fire', 'score': 2},
+        {'text': 'Nokia-Snake', 'score': 8},
+      ]
+    },
   ];
   var _questionIndex = 0;
   var _totalscore = 0;
@@ -78,9 +87,11 @@ class _MyAppState extends State<MyApp> {
     // ignore: unused_local_variable
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
             appBar: AppBar(
+              backgroundColor: Colors.deepPurpleAccent,
               centerTitle: true,
               elevation: 0.0,
               title: const Text(
